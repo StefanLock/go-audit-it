@@ -8,8 +8,7 @@ __Note:__ Replace localhost with your servers URL
 ```
 curl -X POST \
   -H 'Content-Type: application/json' \
-  -d '{"hostname":"my_test_server"}' \
-  -d '{"status": "true"}' \
+  -d '{"host":"my_test_server", "status":"pass"}' \
   localhost:5000/systems
 ```
 ### Get system
@@ -18,9 +17,9 @@ curl localhost:5000/systems
 ```
 ### Update system
 ```
-curl -X PUT \
+curl -X PATCH \
   -H 'Content-Type: application/json' \
-  -d '{"hostname":"my_updated_test_server"}' \
+  -d '{"Host":"my_updated_test_server"}' \
   localhost:5000/systems/<id>
 
 ```
