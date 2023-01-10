@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "../project-lock-site"
+		},
+		{
+			"path": "../Gymnasty"
+		},
+		{
+			"path": "../rabbitmq"
+		},
+		{
+			"path": "../cos-ui"
+		},
+		{
+			"path": "../../repos/cloud-orchestration-service"
+		},
+		{
+			"path": "../GymSights"
+		},
+		{
+			"path": "../go-learning"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

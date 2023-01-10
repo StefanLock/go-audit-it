@@ -29,7 +29,9 @@ func FindSystems(c *gin.Context) {
 	var systems []models.System
 	models.DB.Find(&systems)
 
-	c.JSON(http.StatusOK, gin.H{"data": systems})
+	// c.JSON(http.StatusOK, gin.H{"data": systems})
+
+	c.HTML(http.StatusOK, "systems.html", gin.H{"data": systems})
 }
 
 func FindSystem(c *gin.Context) {
